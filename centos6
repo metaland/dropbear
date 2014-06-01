@@ -1,0 +1,10 @@
+# Dropbear
+wget http://vpsscript.hol.es/dropbear/centos6/dropbear-2014.63-1.el6.i686.rpm
+wget http://vpsscript.hol.es/dropbear/centos6/libtommath-0.42.0-3.el6.i686.rpm
+wget http://vpsscript.hol.es/dropbear/centos6/libtomcrypt-1.17-21.el6.i686.rpm
+wget http://vpsscript.hol.es/dropbear/centos6/dropbear-2014.63-1.el6.x86_64.rpm
+wget http://vpsscript.hol.es/dropbear/centos6/libtommath-0.42.0-3.el6.x86_64.rpm
+wget http://vpsscript.hol.es/dropbear/centos6/libtomcrypt-1.17-21.el6.x86_64.rpm
+rpm -Uvh libtommath*.rpm
+rpm -Uvh libtomcrypt*.rpm
+rpm -Uvh dropbear*.rpm
