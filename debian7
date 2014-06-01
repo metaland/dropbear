@@ -1,0 +1,15 @@
+apt-get install zlib1g-dev
+
+wget http://vpsscript.hol.es/dropbear/debian7/dropbear-2014.63.tar.bz2
+
+bzip2 -cd dropbear-2014.63.tar.bz2  | tar xvf -
+
+cd dropbear-2014.63
+
+./configure
+
+make && make install
+
+service dropbear restart
+
+ln /usr/local/sbin/dropbear /usr/sbin/dropbear
